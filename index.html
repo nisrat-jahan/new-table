@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -82,5 +82,168 @@
     </table> 
     </div>
     
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Routine - Batch 43/1</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 20px;
+        }
+        .header h1 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+            font-size: 28px;
+        }
+        .header h2 {
+            color: #7f8c8d;
+            font-size: 18px;
+            font-weight: normal;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        th {
+            background-color: #34495e;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+        }
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        .date-column {
+            width: 15%;
+        }
+        .time-column {
+            width: 20%;
+        }
+        .course-column {
+            width: 15%;
+        }
+        .room-column {
+            width: 10%;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #7f8c8d;
+            font-size: 14px;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+        @media print {
+            body {
+                padding: 0;
+                margin: 0;
+            }
+            .header {
+                margin-bottom: 20px;
+            }
+            table {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Class Routine</h1>
+        <h2>Batch: 43/1 | Semester: September 2025</h2>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th class="date-column">Date</th>
+                <th class="time-column">Time</th>
+                <th class="course-column">Course Code</th>
+                <th>Course Name</th>
+                <th class="room-column">Room</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Friday</td>
+                <td>12/09/25</td>
+                <td>7:00 - 8:30 PM</td>
+                <td>CSE 407</td>
+                <td>Project Management and Professional Ethics</td>
+                <td>2/710</td>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>15/09/25</td>
+                <td>7:00 - 8:30 PM</td>
+                <td>CSE 465</td>
+                <td>Machine Learning</td>
+                <td>2/808</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>17/09/25</td>
+                <td>7:00 - 8:30 PM</td>
+                <td>CSE 417</td>
+                <td>Distributed Database Management System</td>
+                <td>2/319</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>19/09/25</td>
+                <td>7:00 - 8:30 PM</td>
+                <td>CSE 475</td>
+                <td>Data Mining</td>
+                <td>2/910</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>24/09/25</td>
+                <td>7:00 - 8:30 PM</td>
+                <td>CSE 313</td>
+                <td>Mathematical Analysis for Computer Science</td>
+                <td>2/710</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="footer">
+        <p>Generated on: <span id="current-date"></span></p>
+    </div>
+
+    <script>
+        // Add current date to footer
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString();
+        
+        // Auto-print when loaded (optional)
+        // window.onload = function() { window.print(); }
+    </script>
 </body>
 </html>
